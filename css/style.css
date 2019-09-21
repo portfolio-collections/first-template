@@ -1,0 +1,362 @@
+html{
+  scroll-behavior: smooth;
+}
+.sizer{
+  width: 350px;
+  height: 250px;
+}
+#shihab{
+  background-color: #17A2B8!important;
+}
+.red{
+	background-color: red;
+
+}
+.blue{
+	background-color: blue;
+}
+.green{
+	background-color: green;
+}
+.colored{
+	background-color: transparent !important;
+}
+.border-bottom{
+	border-bottom: 3px solid lightgray !important;
+}
+.blockquote{
+	border-left: 4px solid #795548 !important;
+	padding-left: 8px;
+}
+.shihabcolor{
+	color: #795548 !important;
+}
+.nodecoration a{
+	color: #795548 !important;
+	text-decoration: none !important;
+}
+.transparent{
+	background-color: transparent !important;
+}
+.jumbotron{
+	margin-bottom: 0rem!important;
+}
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid #795548;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid #795548;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+@keyframes typefinal {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+@keyframes blinker {
+  50% {
+    border-color: tranparent;
+  }
+}
+.overflow{
+ overflow: hidden;
+}
+.shadowing{
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.css-typing p {
+  border-right: .15em solid #795548;
+  color:#795548;
+  font-family: monospace;
+  font-size: 22px;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: .15em;
+}
+.css-typing p:nth-of-type(1) {
+  width: 375px;
+  animation: type 1s steps(40, end);
+  animation-fill-mode: forwards;
+}
+.css-typing p:nth-of-type(2) {
+  width: 205px;
+  opacity: 0;
+  animation: type2 1s steps(40, end);
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.css-typing p:nth-of-type(3) {
+  width: 175px;
+  opacity: 0;
+  animation: type2 1s steps(40, end);
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.css-typing p:nth-of-type(4) {
+  width: 105px;
+  opacity: 0;
+  animation: type2 1s steps(40, end);
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-of-type(5) {
+  width: 150px;
+  opacity: 0;
+  animation: type2 1s steps(40, end);
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+.css-typing p:nth-of-type(6) {
+  width: 140px;
+  opacity: 0;
+  animation: type2 1s steps(40, end);
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+.css-typing p:nth-of-type(7) {
+  width: 470px;
+  word-break: break-all;
+  opacity: 0;
+  animation: type2 2s steps(40, end);
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+.css-typing p:nth-of-type(9) {
+  width: 245px;
+  opacity: 0;
+  animation: type2 1s steps(40, end);
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+}
+.css-typing p:nth-of-type(10){
+  width: 360px;
+  opacity: 0;
+  animation: typefinal 1s steps(40, end);
+  /*animation: typefinal 1s steps(40, end) , blinker 0.5s step-end infinite alternate;*/
+  animation-delay: 9s;
+  animation-fill-mode: forwards;
+}
+.overflow{
+  /*overflow: auto;*/
+}
+
+.swing {
+    animation: swing ease-in-out 1.5s infinite alternate;
+    transform-origin: center -20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.swing img {
+    border: 5px solid #f8f8f8;
+    display: block;
+}
+.swing:after{
+    content: '';
+    position: absolute;  
+    width: 20px; height: 20px;  
+    border: 1px solid #999;
+    top: -11px; left: 44%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+/* nail */
+.swing:before{
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    top: -17px;left: 46.5%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+}
+ 
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+
+@keyframes smallswing{
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+.ml-xs-mob{
+  margin-left: 2rem!important;
+  margin-right: 2rem!important;
+}
+/* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+.flip-container, .front, .back {
+  width: 320px;
+  height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+}
+
+.moving{
+  animation: moving ease-in-out 1s infinite alternate;
+}
+
+@keyframes moving {
+    to { 
+      transform: translateX(-8px);
+
+     }
+}
+.circle:hover{
+  border-radius: 50%;
+}
+.toright{
+  float: right;
+}
+.toleft{
+  float: left;
+}
+.cleardiv{
+  clear: both;
+}
+
+.nav-link:hover{
+  background-color: #795548!important;
+  color: #F8F9FA!important;
+  border-radius: 20px;	
+}
+
+/*@media only screen and (max-width: 505px) {
+  .ml-xs-mob {
+    padding-left: 60px;
+  }
+}*/
+
+@media only screen and (max-width: 320px) {
+  body{
+
+  }
+  .swing{
+    /*animation-play-state: paused;*/
+    /*animation: smallswing ease-in-out 1.5s infinite alternate;*/
+
+  }
+  #shihab{
+  
+  }
+  #first {
+   
+  }
+  #second {
+    
+  }
+  #third {
+  }
+}
+@media only screen and (max-width: 360px) {
+  #first {
+    margin: 50px auto!important; 
+  }
+  #second {
+    
+  }
+  #third {
+  }
+}
+/*
+@media only screen and (max-width: 1116px) {
+  #first {
+  
+  }
+  #second {
+    padding-left: 10px;
+  }
+  #third {
+  }
+}
+@media only screen and (max-width: 766px) {
+  #first {
+    padding-left: 200px;
+  }
+  #second {
+    
+  }
+  #third {
+  }
+}*/
+
+.pls-3{
+  float: left;
+  padding-left: 20px;
+}
+#plsf-3{
+  float: left;
+  padding-left: 40px;
+}
+
+@keyframes blinker {
+  from {opacity: 1.0;}
+  to {
+    
+    opacity: 0.2;
+    }
+}
+#blink{
+  text-decoration: blink;
+  animation-name: blinker;
+  animation-duration: 2s;
+  animation-iteration-count:infinite;
+  animation-timing-function:ease-in-out;
+  animation-direction: alternate;
+}

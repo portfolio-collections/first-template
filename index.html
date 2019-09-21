@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/jQuery.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script src="https://kit.fontawesome.com/a177902e94.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>Shihab Eshtaiwi</title>
+	<!-- <script type="text/javascript">
+		$("document").ready(function(){
+			alert('welcome to jQuery');
+			$(".hides").css("display":"block", "animation":"scale" );
+		});
+	</script> -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$("#about").click(function(){
+			//$('#ab1').gotoAnchor();
+			//$("#ab1").css("color","green");
+			 $("#collapseOne").on('shown.bs.collapse', function(){
+     		  window.location = "#collapseOne";
+    			});
+			});
+
+			$("#experience").click(function(){
+			//$('#ab1').gotoAnchor();
+			//$("#ab1").css("color","green");
+			 $("#collapseTwo").on('shown.bs.collapse', function(){
+     		  window.location = "#collapseTwo";
+    			});
+			});
+			$("#projects").click(function(){
+			//$('#ab1').gotoAnchor();
+			//$("#ab1").css("color","green");
+			$("#collapseThree").on('shown.bs.collapse', function(){
+     		  window.location = "#collapseThree";
+    			});
+			});
+
+			$("#skills").click(function(){
+			//$('#ab1').gotoAnchor();
+			//$("#ab1").css("color","green");
+			$("#collapseFour").on('shown.bs.collapse', function(){
+     		  window.location = "#collapseFour";
+    			});
+			});
+
+			$("#education").click(function(){
+			//$('#ab1').gotoAnchor();
+			//$("#ab1").css("color","green");
+			$("#collapsefive").on('shown.bs.collapse', function(){
+     		  window.location = "#collapsefive";
+    			});
+			});
+
+		});
+	</script>
+	
+</head>
+<body>
+	<!-- <div class="jumbotron jumbotron-fluid text-monospace text-center"></div> -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light notshake" id="shihab">
+		<a class="navbar-brand mr-xl-5 pr-xl-5 shihabcolor" href="index.html">Shihab</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse ml-xl-5 pl-xl-5" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+			<a class="nav-link shihabcolor" id="about" href="#collapseOne" data-toggle="collapse" data-target="#collapseOne"  aria-controls="collapseOne">ABOUT</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link shihabcolor" id="experience" href="#collapseTwo" data-toggle="collapse" data-target="#collapseTwo" aria-controls="collapseTwo">EXPERIENCE</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link shihabcolor" id="projects" href="#headingThree" data-toggle="collapse" data-target="#collapseThree" aria-controls="collapseThree">PROJECTS</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link shihabcolor" id="skills" href="#headingFour" data-toggle="collapse" data-target="#collapseFour" aria-controls="collapseThree">SKILLS</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link shihabcolor" id="education" href="#headingFive" data-toggle="collapse" data-target="#collapsefive" aria-controls="collapsefive">EDUCATION</a>
+			</li>
+		</div>
+	</nav>
+	<div class="container-fluid mt-5 mb-5">
+		<div class="row"> 
+			<div class="col-lg-3 col-md-4 ml-xs-mob mt-5" id="first">
+				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+					<div class="flipper">
+						<div class="front">
+							<div class="swing p-2">
+							<figure>
+							<img class="img-thumbnail ml-3" src="img/i34.jpg">
+							<h3 class="display-5 font-weight-bold shihabcolor ml-4">Shihab Eshtaiwi</h3>
+							<p class="lead font-weight-bold shihabcolor ml-4">FrontEnd Web Developer</p>
+							</figure>
+								<h3 class="shihabcolor ml-5"><i class="shihabcolor far fa-hand-point-right moving"></i>Contact Me <i class="shihabcolor far fa-hand-point-left moving"></i></h3>
+							</div>
+						</div>
+						<div class="back">
+							<div class="card swing shihabcolor">
+								<div class="card-header">Contact Me</div>
+								<div class="card-body text-primary">
+									<form>
+										<div class="form-group">
+										    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+										</div>
+										  <div class="form-group">
+										    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your name">
+										  </div>
+										  <div class="form-group">
+											    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Enter your message"></textarea>
+										  </div>
+										  <button class="btn btn-info btn-lg btn-block collapsed" type="button">
+						        			<span><i class="fas fa-share-square"></i> Send</span>
+						      			  </button>
+									</form>
+									<div id="plsf-3">
+										<a href="https://web.facebook.com/mr.shihab" target="_blank"><i class="fab fa-facebook-square btn btn-info btn-lg mt-4"></i></a>
+									</div>
+									<div class="pls-3">
+										<a href="https://www.linkedin.com/in/mreshtaiwi" target="_blank"><i class="fab fa-linkedin-in btn btn-info btn-lg mt-4"></i></a>
+									</div>
+									<div class="pls-3">
+										<a href="https://github.com/mreshtaiwi" target="_blank"><i class="fab fa-github btn btn-info btn-lg mt-4"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-6 mt-5" id="second">
+				<div class="card overflow">
+					<div class="card-body shadowing">
+						<div class="css-typing">
+							<p class="card-text"><i class="fas fa-user"></i> Shihab Aldeen Eshtaiwi</p>
+							<p class="card-text"><i class="fas fa-birthday-cake"></i> 05-Aug-1986</p>
+							<p class="card-text"><i class="fas fa-flag"></i> Jordanian</p>
+							<p class="card-text"><i class="fas fa-venus-mars"></i> Male</p>
+							<p class="card-text"><i class="fas fa-ring"></i> Married</p>
+							<p class="card-text"><i class="fas fa-mosque"></i> Muslim</p>
+							<p class="card-text"><i class="fas fa-address-card"></i> Amman Al-abdali"ABDALI MALL"<p>
+							<p class="card-text"><i class="fas fa-mobile-alt"></i> 00962788616108</p>
+							<p class="card-text"><i class="fas fa-at"></i> mr.eshtaiwi@gmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="col-lg-2 col-md-12 red mt-5" id="third">z</div> -->
+		</div>
+		<!-- <div class="row"> 
+			<div class="col-lg-3 ml-xs-mob mt-5" id="first">
+				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+					<div class="flipper">
+						<div class="front">
+							<div class="swing p-2">
+							<figure>
+							<img class="img-thumbnail ml-3" src="img/i34.jpg">
+							<h3 class="display-5 font-weight-bold shihabcolor ml-4">Shihab Eshtaiwi</h3>
+							<p class="lead font-weight-bold shihabcolor ml-4">FrontEnd Web Developer</p>
+							</figure>
+								<h3 class="shihabcolor ml-5"><i class="shihabcolor far fa-hand-point-right moving"></i>Contact Me <i class="shihabcolor far fa-hand-point-left moving"></i></h3>
+							</div>
+						</div>
+						<div class="back">
+							<div class="card swing shihabcolor">
+								<div class="card-header">Contact Me</div>
+								<div class="card-body text-primary">
+									<form>
+										<div class="form-group">
+										    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+										</div>
+										  <div class="form-group">
+										    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your name">
+										  </div>
+										  <div class="form-group">
+											    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Enter your message"></textarea>
+										  </div>
+										  <button class="btn btn-info btn-lg btn-block collapsed" type="button">
+						        			<span><i class="fas fa-share-square"></i> Send</span>
+						      			  </button>
+									</form>
+									<div id="plsf-3">
+										<a href="https://web.facebook.com/mr.shihab" target="_blank"><i class="fab fa-facebook-square btn btn-info btn-lg mt-4"></i></a>
+									</div>
+									<div class="pls-3">
+										<a href="https://www.linkedin.com/in/mreshtaiwi" target="_blank"><i class="fab fa-linkedin-in btn btn-info btn-lg mt-4"></i></a>
+									</div>
+									<div class="pls-3">
+										<a href="https://github.com/mreshtaiwi" target="_blank"><i class="fab fa-github btn btn-info btn-lg mt-4"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-5 mt-5" id="second">
+				<div class="card overflow">
+					<div class="card-body shadowing">
+						<div class="css-typing">
+							<p class="card-text"><i class="fas fa-user"></i> Shihab Aldeen Eshtaiwi</p>
+							<p class="card-text"><i class="fas fa-birthday-cake"></i> 05-Aug-1986</p>
+							<p class="card-text"><i class="fas fa-flag"></i> Jordanian</p>
+							<p class="card-text"><i class="fas fa-venus-mars"></i> Male</p>
+							<p class="card-text"><i class="fas fa-ring"></i> Married</p>
+							<p class="card-text"><i class="fas fa-mosque"></i> Muslim</p>
+							<p class="card-text"><i class="fas fa-address-card"></i> Amman Al-abdali"ABDALI MALL"<p>
+							<p class="card-text"><i class="fas fa-mobile-alt"></i> 00962788616108</p>
+							<p class="card-text"><i class="fas fa-at"></i> mr.eshtaiwi@gmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 red mt-5" id="third">z</div>
+		</div> -->
+	</div>
+	<div class="container-fluid pb-2">
+			<div class="accordion pt-2" id="accordionExample">
+				<!--start of ABOUT section-->
+				<div class="card colored">
+					<div class="card-header"  id="about">
+						<h2 class="mb-0">
+							<button class="btn btn-info btn-lg btn-block collapsed text-monospace" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							<span><i class="far fa-user"></i> ABOUT</span>
+							</button>
+						</h2>
+					</div>
+					<!-- you can add "show" class to class="collapse" so it will open -->
+					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+						<div class="card-body">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-lg-12 text-left">
+										<blockquote class="blockquote shihabcolor">
+										<span id="ab1">Mission-driven</span> FrondEnd developer with a passion for createing thoughtful UI design, collaboration, and E-commerce.
+										</blockquote>
+										<p class="shihabcolor">
+										From recording educational material, to computer teacher in UNRWA, to small business owner and entrepreneur — I've never stopped engaging my passion to help others and solve problems.
+										</p>
+										<p class="shihabcolor">
+										As a web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to literally change the world. That's why I’m excited to make a big impact at a high growth company.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end of about section-->
+				<!--start of EXPERIENCE section-->
+				<div class="card colored text-left" id="headingTwo">
+					<div class="card-header" >
+						<h2 class="mb-0">
+							<button class="btn btn-info btn-lg btn-block collapsed text-monospace" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+							<span><i class="fas fa-briefcase"></i> EXPERIENCE</span>
+							</button>
+						</h2>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+						<div class="card-body">
+							<div class="container-fluid shihabcolor text-left">
+								<div class="card-deck">
+									<div class="row">
+										<div class="col-xl-3 col-lg-6" id="experience">
+											<div class="card">
+												<img src="img/trainee.jpg" class="card-img-top" alt="trainee">
+												<div class="card-body">
+													<h5 class="card-title">Trainee</h5>
+													<p class="card-text">
+													<ol> 
+													<li>
+													Editing videos using camtasia studio.
+													</li>
+													<li>
+													Creating studying material ICDL.
+													</li>
+													</ol>
+													</p>
+												</div>
+												<div class="card-footer">
+													<small class="text-muted"><i class="fas fa-hourglass-end"></i>&nbsp;2009 - six months <a class="nodecoration" href="http://www.ctsjordan.com" target="_blank">ctsjordan</a></small>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-lg-6">
+											<div class="card">
+												<img src="img/teacher.jpg" class="card-img-top" alt="computer teacher">
+												<div class="card-body">
+													<h5 class="card-title">Computer Teacher</h5>
+													<p class="card-text">
+													<ol> 
+													<li>
+													Organize, maintain and manage class systems in proper working condition.
+													</li>
+													<li>
+													Teach students and learners to use computers.
+													</li>
+													<li>
+													Design and develop appropriate computer instructional material.
+													</li>
+													<li>
+													Manage and monitor student behavior.
+													</li>
+													<li>
+													Develop and implement lesson plans and classroom activities in consistent with the student management issues.
+													</li>
+													</ol>
+													</p>
+												</div>
+												<div class="card-footer">
+												<small class="text-muted"><i class="fas fa-hourglass-end"></i>&nbsp;2010-2012 <a class="nodecoration" href="https://www.unrwa.org" target="_blank">UNRWA</a></small>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-lg-6">
+											<div class="card">
+												<img src="img/xpsbox.jpg" class="card-img-top" alt="xpsbox">
+												<div class="card-body">
+													<h5 class="card-title">Co-Founder</h5>
+													<p class="card-text">
+													<ol> 
+													<li>
+													Customer service.
+													</li>
+													<li>
+													Cost calculation.
+													</li>
+													<li>
+													Online marketing (Social Media).
+													</li>
+													<li>
+													Online shopping process.
+													</li>
+													<li>
+													Customs clearance.
+													</li>
+													</ol>
+													</p>
+												</div>
+												<div class="card-footer">
+													<small class="text-muted"><i class="fas fa-hourglass-end"></i>&nbsp;2012-2019 <a class="nodecoration" href="https://web.facebook.com/Xpsbox.Jordan" target="_blank">xpsbox</a></small>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-lg-6">
+											<div class="card">
+											<img src="img/web.jpg" class="card-img-top" alt="web developer">
+											<div class="card-body">
+												<h5 class="card-title">FrontEnd Web developer</h5>
+												<p class="card-text">
+												<ol>
+												<li>
+												<i class="fab fa-github"></i>&nbsp;GITHUB.
+												</li>
+												<li>
+												<i class="fab fa-html5"></i>&nbsp;HTML5.
+												</li>
+												<li>
+												<i class="fab fa-css3-alt"></i>&nbsp;CSS3.
+												</li>
+												<li>
+												<i class="fab fa-bootstrap"></i>&nbsp;BOOTSTAP 4.
+												</li>
+												<li>
+												<i class="fab fa-searchengin"></i>&nbsp;SEO.
+												</li>
+												<li>
+												<i class="far fa-play-circle"></i>&nbsp;ANIMATION.
+												</li>
+												<li>
+												<i class="fab fa-js-square"></i>&nbsp;JavaScript
+												</li>
+												<li>
+												Calling API (JSON, XML).
+												</li>
+												<li>
+												NodeJs.
+												</li>
+												</ol>
+												</p>
+											</div>
+											<div class="card-footer">
+												<small class="text-muted"><i class="fas fa-hourglass-end"></i>&nbsp;2019 <a class="nodecoration" href="http://www.htu.edu.jo" target="_blank">HTU</a></small>
+											</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end of EXPERIENCE section-->
+
+			 	<div class="card colored text-left">
+					<div class="card-header" id="headingThree">
+						<h2 class="mb-0">
+						<button class="btn btn-info btn-lg btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+						<span><i class="fas fa-project-diagram"></i> PROJECTS</span>
+						</button>
+						</h2>
+					</div>
+			    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+			      <div class="card-body">
+			      	<div class="container">
+			      		<div class="row">
+			      			<div class="col-lg-3 col-md-6">
+								<div class="card transparent">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-lg-12 mt-1 pt-2">
+												<img src="img/project1.png" class="card-img-top img-fluid img-thumbnail scale sizer" alt="HTML Basics">
+											</div>
+											<!-- <div class="col-lg-12 mt-1 pt-2">
+												<img src="img/project2.png" class="card-img-top img-fluid img-thumbnail" alt="HTML Basics">
+											</div>
+											<div class="col-lg-12 mt-1 pt-2">
+												<img src="img/project3.png" class="card-img-top img-fluid img-thumbnail" alt="HTML Basics">
+											</div> -->
+										</div>
+									</div>								
+									<div class="card-body">
+										<h5 class="card-title">html/html5 Basics</h5>
+										<p class="card-text">You can check the final result on <a href="https://mreshtaiwi.github.io/html5/index.html" target="_blank">Github</a></p>
+										<p class="card-text"><small class="text-muted">Latest commit on Jul 26</small></p>
+									</div>
+								</div>
+			      			</div>
+			      			<div class="col-lg-3 col-md-6">
+			      				<div class="card transparent">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-lg-12 mt-1 pt-2">
+												<img src="img/xpsbox.png" class="card-img-top img-fluid img-thumbnail scale sizer" alt="shipping company">
+											</div>
+										</div>
+									</div>								
+									<div class="card-body">
+									<h5 class="card-title">XPSBOX</h5>
+									<p class="card-text">You can check the final result on <a href="https://mreshtaiwi.github.io/xpsbox-new/" target="_blank">Github</a></p>
+									<p class="card-text"><small class="text-muted">Latest commit on Aug 27</small></p>
+									</div>
+								</div>
+			      			</div>
+			      			<div class="col-lg-3 col-md-6">
+			      				<div class="card transparent">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-lg-12 mt-1 pt-2">
+												<img src="img/university-temp.png" class="card-img-top img-fluid img-thumbnail scale sizer" alt="university">
+											</div>
+										</div>
+										<!-- <div class="row">
+											<div class="col-lg-6 mt-1 pt-2">
+												<img src="img/p1.jpg" class="card-img-top img-fluid img-thumbnail  rounded-circle" alt="first project">
+											</div>
+											<div class="col-lg-6 mt-1 pt-2">
+											<img src="img/p1.jpg" class="card-img-top img-fluid img-thumbnail  rounded-circle" alt="first project">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-6 mt-1 pt-2">
+												<img src="img/p1.jpg" class="card-img-top img-fluid img-thumbnail  rounded-circle" alt="first project">
+											</div>
+											<div class="col-lg-6 mt-1 pt-2">
+											<img src="img/p1.jpg" class="card-img-top img-fluid img-thumbnail  rounded-circle" alt="first project">
+											</div>
+										</div> -->
+									</div>								
+									<div class="card-body">
+									<h5 class="card-title">UNIVERSITY</h5>
+									<p class="card-text">You can check the final result on <a href="https://mreshtaiwi.github.io/university/" target="_blank">Github</a></p>
+									<p class="card-text"><small class="text-muted">Latest commit on Sep 26</small></p>
+									</div>
+								</div>
+			      			</div>
+			      			<div class="col-lg-3 col-md-6">
+			      				<div class="card transparent">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-lg-12 mt-1 pt-2">
+												<img src="img/health.jpg" class="card-img-top img-fluid img-thumbnail scale sizer" alt="health site">
+											</div>
+										</div>
+									</div>								
+									<div class="card-body">
+									<h5 class="card-title">HEALTH WEBSITE</h5>
+									<p class="card-text">You can check the final result on <a href="https://mreshtaiwi.github.io/healthwebsite-v2/" target="_blank">Github</a></p>
+									<p class="card-text"><small class="text-muted">Latest commit on Aug 26</small></p>
+									</div>
+								</div>
+			      			</div>
+			      		</div>
+			      		<div class="row mt-3">
+			      			<div class="col-lg-3 col-md-6">
+			      				<div class="card transparent">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-lg-12 mt-1 pt-2">
+												<img src="img/animation.png" class="card-img-top img-fluid img-thumbnail scale sizer" alt="health site">
+											</div>
+										</div>
+									</div>								
+									<div class="card-body">
+									<h5 class="card-title">ANIMATION</h5>
+									<p class="card-text">You can check the final result on <a href="https://mreshtaiwi.github.io/animation/index.html" target="_blank">Github</a></p>
+									<p class="card-text"><small class="text-muted">Latest commit on Aug 26</small></p>
+									</div>
+								</div>
+			      			</div>
+			      			<div class="col-lg-3 col-md-6">
+			      				<div class="card transparent">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-lg-12 mt-1 pt-2">
+												<img src="img/photopro.png" class="card-img-top img-fluid img-thumbnail scale sizer" alt="health site">
+											</div>
+										</div>
+									</div>								
+									<div class="card-body">
+									<h5 class="card-title">PHOTOPRO</h5>
+									<p class="card-text">You can check the final result on <a href="https://mreshtaiwi.github.io/photopro/" target="_blank">Github</a></p>
+									<p class="card-text"><small class="text-muted">Latest commit on Jul 26</small></p>
+									</div>
+								</div>
+			      			</div>
+			      			<div class="col-lg-3 col-md-6">
+			      				<div class="card transparent">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-lg-12 mt-1 pt-2">
+												<img src="img/ushop.png" class="card-img-top img-fluid img-thumbnail scale sizer" alt="health site">
+											</div>
+										</div>
+									</div>								
+									<div class="card-body">
+									<h5 class="card-title">USHOP</h5>
+									<p class="card-text">You can check the final result on <a href="https://mreshtaiwi.github.io/ushop/" target="_blank">Github</a></p>
+									<p class="card-text"><small class="text-muted">Latest commit on Sep 14</small></p>
+									</div>
+								</div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card colored text-left">
+			    <div class="card-header" id="headingFour">
+			      <h2 class="mb-0">
+			        <button class="btn btn-info btn-lg btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+			        <span><i class="fab fa-gripfire"></i> SKILLS</span>
+			        </button>
+			      </h2>
+			    </div>
+			    <div id="collapseFour" class="collapse" aria-labelledby="collapseFour" data-parent="#accordionExample">
+			      <div class="card-body">
+			      	<div class="container-fluid">
+			      		<div class="row">
+			      			<div class="col-lg-2 col-sm-4">
+			      				<!-- shake-slow used from csshake library -->
+								<div class="card pt-2 shake-chunk" style="width: 10rem;">
+									<img class="card-img-top" src="img/html5.png">
+								<div class="card-body">
+								<h5 class="card-title">HTML5</h5>
+								<p class="card-text">HTML5</p>
+								</div>
+								</div>
+			      			</div>
+			      			<div class="col-lg-2 col-sm-4">
+				      			<div class="card pt-2 shake-little" style="width: 10rem;">
+									<img class="card-img-top" src="img/css3.png">
+								<div class="card-body">
+								<h5 class="card-title">CSS3</h5>
+								<p class="card-text">CSS3</p>
+								</div>
+								</div>
+			      			</div>
+			      			<div class="col-lg-2 col-sm-4">
+				      			<div class="card pt-2 shake-slow" style="width: 10rem;">
+									<img class="card-img-top" src="img/javascript.png">
+								<div class="card-body">
+								<h5 class="card-title">JavaScript</h5>
+								<p class="card-text">JavaScript</p>
+								</div>
+								</div>
+			      			</div>
+			      			<div class="col-lg-2 col-sm-4">
+				      			<div class="card pt-2 shake-opacity" style="width: 10rem;">
+									<img class="card-img-top" src="img/jquery.png">
+								<div class="card-body">
+								<h5 class="card-title">jQuery</h5>
+								<p class="card-text">jQuery</p>
+								</div>
+								</div>
+			      			</div>
+			      			<div class="col-lg-2 col-sm-4">
+				      			<div class="card pt-2 shake-slow" style="width: 10rem;">
+									<img class="card-img-top" src="img/bootstrap.png">
+								<div class="card-body">
+								<h5 class="card-title">BOOTSTRAP</h5>
+								<p class="card-text">BOOTSTRAP</p>
+								</div>
+								</div>
+			      			</div>
+			      			<div class="col-lg-2 col-sm-4">
+				      			<div class="card pt-2 shake-rotate" style="width: 10rem;">
+									<img class="card-img-top" src="img/nodejs.png">
+								<div class="card-body">
+								<h5 class="card-title">nodejs</h5>
+								<p class="card-text">nodejs</p>
+								</div>
+								</div>
+							</div>
+			      		</div>
+			      	</div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card colored text-left">
+			    <div class="card-header" id="headingFive">
+			      <h2 class="mb-0">
+			        <button class="btn btn-info btn-lg btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+			        <span><i class="fas fa-user-graduate"></i> EDUCATION</span>
+			        </button>
+			      </h2>
+			    </div>
+			    <div id="collapsefive" class="collapse shihabcolor" aria-labelledby="collapsefive" data-parent="#accordionExample">
+				    <div class="card-body">
+				      	<div class="container-fluid">
+				      		<div class="row">
+				      			<div class="col-lg-6 pb-3">
+					      			<div class="card">
+										<img class="card-img-top" src="img/highschool.jpg">
+										<div class="card-body">
+											<h5 class="card-title">Prince alhassan secondary school</h5>
+											<p class="card-text">General Secondary Education Certificate</p>
+										</div>
+									</div>
+				      			</div>
+				      			<div class="col-lg-6">
+					      			<div class="card">
+										<img class="card-img-top" src="img/uni.jpg">
+										<div class="card-body">
+											<h5 class="card-title">Jordan University of Science and Technology</h5>
+											<p class="card-text">BSc Computer information systems <span id="blink">Very Good GPA</span></p>
+										</div>
+									</div>
+				      			</div>
+				      		</div>
+				      	</div>
+				    </div>
+			    </div>
+			  </div>
+			</div>
+	</div>
+<script src="js/jQuery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
