@@ -98,7 +98,8 @@ html{
   font-size: 22px;
   white-space: nowrap;
   overflow: hidden;
-  letter-spacing: .15em;
+  /*letter-spacing: .15em;*/
+	 	
 }
 .css-typing p:nth-of-type(1) {
   width: 375px;
