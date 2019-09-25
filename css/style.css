@@ -88,6 +88,7 @@ html{
 .overflow{
  overflow: hidden;
 }
+
 .shadowing{
   box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
@@ -98,8 +99,7 @@ html{
   font-size: 22px;
   white-space: nowrap;
   overflow: hidden;
-  /*letter-spacing: 0.15em;*/
-  letter-spacing: 1px;
+  letter-spacing: .15em;
 }
 .css-typing p:nth-of-type(1) {
   width: 375px;
@@ -143,10 +143,10 @@ html{
   animation-fill-mode: forwards;
 }
 .css-typing p:nth-of-type(7) {
-  width: 235px;
+  width: 470px;
   word-break: break-all;
   opacity: 0;
-  animation: type2 1s steps(40, end);
+  animation: type2 2s steps(40, end);
   animation-delay: 6s;
   animation-fill-mode: forwards;
 }
@@ -154,7 +154,7 @@ html{
   width: 245px;
   opacity: 0;
   animation: type2 1s steps(40, end);
-  animation-delay: 7s;
+  animation-delay: 8s;
   animation-fill-mode: forwards;
 }
 .css-typing p:nth-of-type(10){
@@ -162,7 +162,7 @@ html{
   opacity: 0;
   animation: typefinal 1s steps(40, end);
   /*animation: typefinal 1s steps(40, end) , blinker 0.5s step-end infinite alternate;*/
-  animation-delay: 8s;
+  animation-delay: 9s;
   animation-fill-mode: forwards;
 }
 .overflow{
@@ -284,62 +284,21 @@ html{
   }
 }*/
 
-@media only screen and (max-width: 320px) {
-  body{
-
-  }
-  .swing{
-    /*animation-play-state: paused;*/
-    /*animation: smallswing ease-in-out 1.5s infinite alternate;*/
-
-  }
-  #shihab{
-  
-  }
+/*@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1158px){
   #first {
    
   }
   #second {
-    
-  }
-  #third {
-  }
-}
-@media only screen and (max-width: 360px) {
-  #first {
-    margin: 50px auto!important; 
-  }
-  #second {
-    
-  }
-  #third {
-  }
-}
-/*
-@media only screen and (max-width: 1116px) {
-  #first {
-  
-  }
-  #second {
-    padding-left: 10px;
-  }
-  #third {
-  }
-}
-@media only screen and (max-width: 766px) {
-  #first {
-    padding-left: 200px;
-  }
-  #second {
-    
-  }
-  #third {
+   flex: 0 0 66.666667%!important;
+    max-width: 66.666667%!important;
+    margin-left: 10px!important;
   }
 }*/
-
 .pls-3{
   float: left;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 #plsf-3{
   float: left;
@@ -347,16 +306,19 @@ html{
 }
 
 @keyframes blinker {
-  from {opacity: 1.0;}
+  from {
+    opacity: 1.0;
+  }
   to {
     
     opacity: 0.2;
+    color: #17A2B8;
     }
 }
 #blink{
-  text-decoration: blink;
+  /*text-decoration: blink;*/
   animation-name: blinker;
-  animation-duration: 2s;
+  animation-duration: 0.5s;
   animation-iteration-count:infinite;
   animation-timing-function:ease-in-out;
   animation-direction: alternate;
