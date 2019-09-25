@@ -143,10 +143,10 @@ html{
   animation-fill-mode: forwards;
 }
 .css-typing p:nth-of-type(7) {
-  width: 470px;
+  width: 270px;
   word-break: break-all;
   opacity: 0;
-  animation: type2 2s steps(40, end);
+  animation: type2 1s steps(40, end);
   animation-delay: 6s;
   animation-fill-mode: forwards;
 }
@@ -154,7 +154,7 @@ html{
   width: 245px;
   opacity: 0;
   animation: type2 1s steps(40, end);
-  animation-delay: 8s;
+  animation-delay: 7s;
   animation-fill-mode: forwards;
 }
 .css-typing p:nth-of-type(10){
@@ -162,7 +162,7 @@ html{
   opacity: 0;
   animation: typefinal 1s steps(40, end);
   /*animation: typefinal 1s steps(40, end) , blinker 0.5s step-end infinite alternate;*/
-  animation-delay: 9s;
+  animation-delay: 8s;
   animation-fill-mode: forwards;
 }
 .overflow{
