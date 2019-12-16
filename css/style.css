@@ -323,3 +323,16 @@ html{
   animation-timing-function:ease-in-out;
   animation-direction: alternate;
 }
+footer{
+  
+  background-color: #138496;
+  color: white;
+  font-weight: bold;
+  margin:0 auto;
+  line-height: 40px;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  border: 5px dashed white;
+  border-radius: 10px;
+}
