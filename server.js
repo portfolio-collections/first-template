@@ -5,9 +5,9 @@ const PORT = process.env.PORT || 5500;
 server.listen( PORT , () => {
   console.log('listening to port ' , PORT);
 });
-// server.get('/test', (request, response) => {
-//   response.send('working');
-// });
+server.get('/test', (request, response) => {
+  response.send('working');
+});
 // server.listen(PORT,() => {
 // console.log('listen');
 // });
