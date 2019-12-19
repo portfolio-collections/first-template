@@ -7,12 +7,11 @@ const PORT = process.env.PORT || 5500;
 // server.listen( PORT , () => {
 //   console.log('listening to port ' , PORT);
 // // });
-server.get('/test', (request, response) => {
-  response.send('working');
+server.get('/public', (request, response) => {
+  response.use(express.static('/public'));
 });
 server.listen(PORT,() => {
   // eslint-disable-next-line no-console
   console.log('listen');
 });
 
-server.use(express.static('/public'));
