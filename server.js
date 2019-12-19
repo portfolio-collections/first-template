@@ -4,13 +4,14 @@ const express = require('express');
 
 const server = express();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5500;
 
-server.use(express.static('./public'));
+//server.use(express.static('./public'));
 
-// server.get('/test', (request,response) => {
-//   response.send('Your test worked');
-// });
+server.get('/public', (request,response) => {
+  //response.send('Your test worked');
+  response.send(server.use(express.static('./public')));
+});
 
 // server.get('/data', (request, response) => {
 //   let family = [
@@ -23,4 +24,4 @@ server.use(express.static('./public'));
 //   response.json(family);
 // });
 
-// server.listen( PORT, () => console.log('Listening on port', PORT));
+server.listen( PORT, () => console.log('Listening on port', PORT));
