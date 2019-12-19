@@ -12,4 +12,4 @@ server.listen( PORT , () => {
 // console.log('listen');
 // });
 
-server.use(express.static('./public'));
+server.use(express.static('/public'));
