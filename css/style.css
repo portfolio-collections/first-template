@@ -336,3 +336,7 @@ footer{
   border: 5px dashed white;
   border-radius: 10px;
 }
+
+.img-thumbnail{
+  max-width: calc(100% - 2rem) !important;
+}
